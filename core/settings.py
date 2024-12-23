@@ -26,7 +26,9 @@ SECRET_KEY = "django-insecure-f75&047_8@u0=cgyr-q&%2(2-#0rq8s=l+_%_puz^kdub^b7@i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "*",
+]
 
 
 # Application definition
@@ -41,6 +43,7 @@ INSTALLED_APPS = [
     "channels",
     "rest_framework",
     "chatbot",
+    "daphne",
 ]
 
 MIDDLEWARE = [
